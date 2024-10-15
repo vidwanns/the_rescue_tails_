@@ -17,10 +17,11 @@ const FirstSection = () => {
 
         <div className="images-container">
           <img src="/images/firstSection/img_1.png" alt="Rescued dog" className="pet-image" />
-          <img src="/images/firstSection/cat1.jpg" alt="Rescued cat" className="pet-image" />
-          <img src="/images/firstSection/puppy.jpg" alt="Rescued puppy" className="pet-image" />
-          <img src="/images/firstSection/dog2.jpg" alt="Adopt me dog" className="pet-image" />
-          <img src="/images/firstSection/kitten.jpg" alt="Rescued kitten" className="pet-image" />
+          <img src="/images/firstSection/img_2.png" alt="Rescued cat" className="pet-image" />
+          <img src="/images/firstSection/img_3.png" alt="Rescued puppy" className="pet-image" />
+          <img src="/images/firstSection/img_4.png" alt="Adopt me dog" className="pet-image" />
+          <img src="/images/firstSection/img_5.png" alt="Rescued kitten" className="pet-image" />
+          <img src="/images/firstSection/img_6.png" alt="Rescued kitten" className="pet-image" />
         </div>
 
         <div className="donate-section">

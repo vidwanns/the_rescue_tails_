@@ -31,7 +31,7 @@
 
 .pet-image {
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -89,7 +89,7 @@
 /* Right Side Curved Arrow and Text */
 .curved-arrow-section {
     position: absolute;
-    top: 60%;
+    top: 40%;
     right: 50px;
     display: flex;
     align-items: center;
@@ -105,4 +105,5 @@
     margin-top: 5px;
     font-size: 1rem;
     color: #4d4062;
+    width: 120px;
 }
