@@ -28,7 +28,10 @@ const Header = () => {
 
       <div className="buttons-container">
         <div className="button contact">contact us</div>
-        <div className="button donate">Donate</div>
+        <div className="button donate">
+          Donate
+          <img src="/images/header/arrow-up-right.svg" alt="Arrow Icon" className="arrow-icon" />
+        </div>
       </div>
     </header>
   );

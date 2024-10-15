@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background-color: #4b2265; /* Purple background */
+  background-color: #3F1063; /* Purple background */
 }
 
 .logo {
@@ -20,12 +20,13 @@
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .nav-links div {
   color: white;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -49,13 +50,20 @@
 }
 
 .button.contact {
-  background-color: #e0e2d3;
+  background-color: #DFE6D0;
   color: black;
 }
 
 .button.donate {
-  background-color: #f25d30;
+  background-color: #EE7331;
   color: white;
+}
+
+.arrow-icon {
+  width: 11px; /* Adjust the size of the arrow */
+  height: auto;
+  display: inline-block;
+  margin-left: 9px; /* Add a little space between the text and the icon */
 }
 
 html {
