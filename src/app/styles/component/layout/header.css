@@ -27,6 +27,7 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
+  letter-spacing: .5px;
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -37,26 +38,39 @@
 
 .buttons-container {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;  /* Align text and icon */
   padding: 10px 20px;
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .button.contact {
   background-color: #DFE6D0;
   color: black;
+  font-weight : bold;
+
 }
 
 .button.donate {
+  font-weight : bold;
+  letter-spacing: .5px;
   background-color: #EE7331;
   color: white;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button.donate:hover {
+  background-color: #d9611f; /* Slightly darker background on hover */
 }
 
 .arrow-icon {
@@ -64,6 +78,11 @@
   height: auto;
   display: inline-block;
   margin-left: 9px; /* Add a little space between the text and the icon */
+  transition: transform 0.3s ease;
+}
+
+.button.donate:hover .arrow-icon {
+  transform: translateX(5px); /* Move the arrow to the right on hover */
 }
 
 html {
