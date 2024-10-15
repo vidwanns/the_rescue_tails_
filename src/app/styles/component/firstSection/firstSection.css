@@ -1,0 +1,108 @@
+.first-section {
+    position: relative;
+    text-align: center; /* This centers the text inside the section */
+    padding: 50px;
+    background-color: #f8f4ef;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+    font-size: 5rem;
+    color: #000;
+    margin-bottom: 20px;
+    margin: 0 auto 40px;
+    width: 50%; 
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #4d4062;
+    margin: 0 auto 40px; 
+    width: 32%; 
+    text-align: center; /* Ensures text is centered within its block */
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pet-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.donate-section {
+    margin-top: 40px;
+}
+
+.donate-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.donate-button {
+    padding: 10px 20px;
+    background-color: #ff7e42;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.donate-button:hover {
+    background-color: #ff6a2d;
+}
+
+/* SVG Icon Styles */
+.paw-icon {
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.paw-icon.left {
+    left: 5%;
+    top: 24%;
+}
+
+.paw-icon.right {
+    right: 6%;
+    top: 24%;
+    scale: .8;
+}
+
+.bone-icon {
+    position: absolute;
+    top: 33%;
+    left: 26%;
+    scale: .6;
+}
+
+/* Right Side Curved Arrow and Text */
+.curved-arrow-section {
+    position: absolute;
+    top: 60%;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.curved-arrow-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.curved-arrow-text {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #4d4062;
+}

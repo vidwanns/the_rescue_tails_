@@ -1,9 +1,42 @@
-import React from 'react'
+import React from 'react';
+import '../../styles/component/firstSection/firstSection.css';
 
-export default function firstSection() {
+const FirstSection = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <section className="first-section">
+      {/* Left Icons */}
+      <img src="/images/firstSection/pawLeft.svg" alt="Paw left" className="paw-icon left" />
+      <img src="/images/firstSection/bone.svg" alt="Bone icon" className="bone-icon" />
+
+      <div className="content">
+        <h1 className="section-title">A Haven of Love for Cats and Dogs</h1>
+        <p className="section-description">
+          The Rescuing Tails is a dedicated rescue center committed to providing a safe haven for dogs and cats in need. 
+          We offer love, care, and rehabilitation, helping every furry friend find their forever home.
+        </p>
+
+        <div className="images-container">
+          <img src="/images/firstSection/dog1.jpg" alt="Rescued dog" className="pet-image" />
+          <img src="/images/firstSection/cat1.jpg" alt="Rescued cat" className="pet-image" />
+          <img src="/images/firstSection/puppy.jpg" alt="Rescued puppy" className="pet-image" />
+          <img src="/images/firstSection/dog2.jpg" alt="Adopt me dog" className="pet-image" />
+          <img src="/images/firstSection/kitten.jpg" alt="Rescued kitten" className="pet-image" />
+        </div>
+
+        <div className="donate-section">
+          <p className="donate-text">Send it with ❤️</p>
+          <button className="donate-button">Donate</button>
+        </div>
+      </div>
+
+      {/* Right Icons */}
+      <img src="/images/firstSection/pawRight.svg" alt="Paw right" className="paw-icon right" />
+      <div className="curved-arrow-section">
+        <img src="/images/firstSection/curved-arrow.svg" alt="Curved arrow" className="curved-arrow-icon" />
+        <p className="curved-arrow-text">Rescued Dogs and Pets</p>
+      </div>
+    </section>
+  );
+};
+
+export default FirstSection;
