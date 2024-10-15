@@ -16,7 +16,7 @@ const FirstSection = () => {
         </p>
 
         <div className="images-container">
-          <img src="/images/firstSection/dog1.jpg" alt="Rescued dog" className="pet-image" />
+          <img src="/images/firstSection/img_1.png" alt="Rescued dog" className="pet-image" />
           <img src="/images/firstSection/cat1.jpg" alt="Rescued cat" className="pet-image" />
           <img src="/images/firstSection/puppy.jpg" alt="Rescued puppy" className="pet-image" />
           <img src="/images/firstSection/dog2.jpg" alt="Adopt me dog" className="pet-image" />
