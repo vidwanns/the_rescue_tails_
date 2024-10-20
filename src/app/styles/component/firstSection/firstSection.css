@@ -38,27 +38,58 @@
 
 .donate-section {
     margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Center the donate button */
+    align-items: flex-start; /* Align items at the start of the container */
+    gap: 20px; /* Space between left section and button */
 }
+
+.left-align {
+    display: flex;
+    flex-direction: column; /* Stack the text and icon vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 5px; /* Space between the text and the arrow */
+}
+
+.curved-arrow-icon-2 {
+    width: 30px; /* Adjust width if needed */
+    height: auto;
+    transform: rotate(10deg);
+    scale: 1.5;
+    margin-left: 30px;
+}
+
 
 .donate-text {
     font-size: 1.1rem;
     color: #333;
-    margin-bottom: 10px;
+    margin: 0;
+    transform: rotate(20deg);
+}
+
+.donate-button-wrapper {
+    display: inline-block; /* Allows width to adjust to button size */
+    border: 2px dotted #ff7e42; /* Dotted border */
+    padding: 2px 4px 2px 4px; /* Space between the button and the border */
+    border-radius: 30px; /* Match button border radius */
 }
 
 .donate-button {
-    padding: 10px 20px;
-    background-color: #ff7e42;
+    padding: 10px 20px; /* Inner padding for the button */
+    background-color: #ff7e42; /* Original background color */
     color: white;
-    border: none;
-    border-radius: 30px;
+    border: none; /* Remove the default border */
+    border-radius: 30px; /* Keep the original border radius */
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s; /* Add transition for hover effect */
 }
 
 .donate-button:hover {
-    background-color: #ff6a2d;
+    background-color: transparent; /* Change to transparent on hover */
+    color: #ff7e42; /* Change text color on hover */
 }
+
 
 /* SVG Icon Styles */
 .paw-icon {
@@ -81,7 +112,7 @@
 
 .bone-icon {
     position: absolute;
-    top: 33%;
+    top: 30%;
     left: 26%;
     scale: .6;
 }
@@ -89,8 +120,8 @@
 /* Right Side Curved Arrow and Text */
 .curved-arrow-section {
     position: absolute;
-    top: 40%;
-    right: 50px;
+    top: 30%;
+    right: 16%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -99,11 +130,14 @@
 .curved-arrow-icon {
     width: 50px;
     height: 50px;
+    scale: 2;
+    margin-top: -10px;
 }
 
 .curved-arrow-text {
-    margin-top: 5px;
+    margin-top: -30px;
     font-size: 1rem;
     color: #4d4062;
-    width: 120px;
+    width: 100px;
+    transform: rotate(40deg);
 }

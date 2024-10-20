@@ -1,0 +1,125 @@
+.second-section {
+    background-color: #d0ebea;
+    padding: 0 0 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 40px;
+    background-color: #2b534a;
+    padding: 20px;
+    color: #fff;
+    height: 200px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-text {
+    font-size: 1.2rem;
+}
+
+.highlight-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: #2b534a;
+}
+
+.highlight-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6c9f56;
+}
+
+.highlight-text {
+    font-size: 1rem;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+.main-title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #2b534a;
+}
+
+.large-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 3.5rem;  /* Set this back to the original large size */
+    color: #2b534a;
+}
+
+/* Make individual spans larger */
+.large-text span {
+    font-size: 4.5rem;  /* Keep the text inside spans large */
+}
+
+.image-box {
+    width: 200px;
+    height: 90px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: #2b534a;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: #ff7e42;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e6692b;
+}
+
+.curved-decoration {
+    position: absolute;
+    top: 20.3%;
+    left: -3%;
+    text-align: center;
+    scale: .7;
+}
+
+.curved-decoration img {
+    max-width: 100%;
+}
