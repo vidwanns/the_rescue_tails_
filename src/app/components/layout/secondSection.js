@@ -32,7 +32,6 @@ const SecondSection = () => {
         {/* Main Title with Images and Text */}
         <div className="main-title">
           <div className="large-text">
-            {/* Place dogwomen image before "WE HAVE" */}
             <span className="image-box">
               <img src="/images/secondSection/dogwomen.png" alt="Dogwomen" />
             </span>
@@ -40,7 +39,6 @@ const SecondSection = () => {
           </div>
 
           <div className="large-text">
-            {/* Place catwomen image after "A DEEP LOVE" */}
             <span>A DEEP LOVE</span>
             <span className="image-box">
               <img src="/images/secondSection/catwomen.png" alt="Catwomen" />
@@ -48,7 +46,6 @@ const SecondSection = () => {
           </div>
 
           <div className="large-text">
-            {/* Place dog2 image before "FOR ANIMAL" */}
             <span className="image-box">
               <img src="/images/secondSection/dog2.png" alt="Dog 2" />
             </span>
