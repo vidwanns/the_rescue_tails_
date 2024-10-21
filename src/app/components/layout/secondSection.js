@@ -6,7 +6,6 @@ const SecondSection = () => {
     <section className="second-section">
       <div className="stats-container">
         <div className="stat-box">
-          <img src="/images/secondSection/paw.svg" alt="Paw Icon" className="stat-icon" />
           <p className="stat-number">200</p>
           <p className="stat-text">Animals saved</p>
         </div>
@@ -63,8 +62,16 @@ const SecondSection = () => {
         </div>
 
         {/* Paw SVG */}
-        <div className="svg-paw">
+        <div className="svg-paw-top-left">
           <img src="/images/secondSection/paw.svg" alt="Paw Icon" />
+        </div>
+
+        <div className="svg-paw-top-right">
+          <img src="/images/secondSection/paw.svg" alt="Paw Icon" />
+        </div>
+
+        <div className="svg-paw-bottom-left">
+          <img src="/images/secondSection/dark paw.svg" alt="Paw Icon" />
         </div>
 
         <p className="description-text">

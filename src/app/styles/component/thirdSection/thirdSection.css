@@ -1,0 +1,100 @@
+.third-section {
+    background: linear-gradient(45deg, #edf9ec, #f9e9e8);
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .help-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .text-content {
+    max-width: 45%;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .adopt-btn {
+    background-color: #655e94;
+    color: white;
+  }
+  
+  .foster-btn, .volunteer-btn, .donate-btn {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .adoptables-link {
+    color: #F9B94E;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .adoptables-link:hover {
+    text-decoration: underline;
+  }
+  
+  .donation-chart {
+    max-width: 45%;
+  }
+  
+  .donation-chart h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .donation-chart .transforms {
+    color: #F69C2C;
+  }
+  
+  .chart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chart-item {
+    text-align: center;
+  }
+  
+  .chart-icon {
+    font-size: 2rem;
+    display: block;
+  }
+  
+  .chart-line {
+    flex: 1;
+    height: 2px;
+    background-color: #333;
+    margin: 0 10px;
+  }
+  

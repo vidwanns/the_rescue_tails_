@@ -14,15 +14,11 @@
     padding: 20px;
     color: #fff;
     height: 200px;
+    align-items: center;
 }
 
 .stat-box {
     text-align: center;
-}
-
-.stat-icon {
-    width: 50px;
-    margin-bottom: 10px;
 }
 
 .stat-number {
@@ -39,6 +35,7 @@
     padding: 10px;
     border-radius: 10px;
     color: #2b534a;
+    height: 170px;
 }
 
 .highlight-number {
@@ -68,15 +65,13 @@
     align-items: center;
     gap: 25px;
     margin-bottom: 20px;
-    font-size: 3.5rem;  /* Set this back to the original large size */
+    font-size: 3.5rem;
     color: #2b534a;
     width: 100%;
-
 }
 
-/* Make individual spans larger */
 .large-text span {
-    font-size: 4.5rem;  /* Keep the text inside spans large */
+    font-size: 4.5rem;
 }
 
 .image-box {
@@ -126,13 +121,13 @@
     max-width: 100%;
 }
 
-
 .curved-decoration-2 {
     position: absolute;
     top: 71%;
     left: 80%;
     text-align: center;
     scale: .7;
+    transform: rotate(180deg);
 }
 
 /* Heart SVG positioning */
@@ -148,14 +143,42 @@
     height: auto;
 }
 
-/* Paw SVG positioning */
-.svg-paw {
+/* Paw SVG positioning for top-left */
+.svg-paw-top-left {
     position: absolute;
     top: 5%;
-    right: 5%;
+    left: 5%;
+    scale: 1.5;
+    transform: rotate(-40deg);
 }
 
-.svg-paw img {
+.svg-paw-top-left img {
     width: 40px;
     height: auto;
 }
+
+/* Paw SVG positioning for bottom-left */
+.svg-paw-bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.svg-paw-bottom-left img {
+    width: 40px;
+    height: auto;
+}
+
+/* Paw SVG positioning for top-right */
+.svg-paw-top-right {
+    position: absolute;
+    top: 19%;
+    right: 5%;
+    scale: 1.5;
+}
+
+.svg-paw-top-right img {
+    width: 40px;
+    height: auto;
+}
+
