@@ -18,34 +18,66 @@
 }
 
 .stat-box {
+    width: 190px;
+    height: 160px;
+    position: relative;
     text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: white; /* Default color for text */
+}
+
+.stat-box:hover {
+    transform: scale(1.05);
+}
+
+.stat-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.stat-box:hover::before {
+    opacity: 1;
+}
+
+.heart-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: rotate(-10deg);
+}
+
+.stat-box:hover .heart-icon {
+    opacity: 1; /* Heart icon appears on hover */
+}
+
+.stat-number, .stat-text {
+    color: white; /* Default white color */
+    transition: color 0.3s ease;
+}
+
+.stat-box:hover .stat-number, 
+.stat-box:hover .stat-text {
+    color: #6c9f56; /* Green color on hover */
 }
 
 .stat-number {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .stat-text {
     font-size: 1.2rem;
-}
-
-.highlight-box {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    color: #2b534a;
-    height: 170px;
-}
-
-.highlight-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #6c9f56;
-}
-
-.highlight-text {
-    font-size: 1rem;
 }
 
 .main-content {
@@ -140,7 +172,7 @@
 
 .svg-heart img {
     width: 40px;
-    height: auto;
+    height: auto;    
 }
 
 /* Paw SVG positioning for top-left */
@@ -181,4 +213,3 @@
     width: 40px;
     height: auto;
 }
-

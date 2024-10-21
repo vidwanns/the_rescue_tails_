@@ -6,18 +6,22 @@ const SecondSection = () => {
     <section className="second-section">
       <div className="stats-container">
         <div className="stat-box">
+          <img src="/images/secondSection/Icon akar-heart.svg" alt="Heart Icon" className="heart-icon" />
           <p className="stat-number">200</p>
           <p className="stat-text">Animals saved</p>
         </div>
-        <div className="stat-box highlight-box">
-          <p className="highlight-number">33</p>
-          <p className="highlight-text">Animals find new home</p>
+        <div className="stat-box">
+          <img src="/images/secondSection/Icon akar-heart.svg" alt="Heart Icon" className="heart-icon" />
+          <p className="stat-number">33</p>
+          <p className="stat-text">Animals find new home</p>
         </div>
         <div className="stat-box">
+          <img src="/images/secondSection/Icon akar-heart.svg" alt="Heart Icon" className="heart-icon" />
           <p className="stat-number">33</p>
           <p className="stat-text">Animals sterilized</p>
         </div>
         <div className="stat-box">
+          <img src="/images/secondSection/Icon akar-heart.svg" alt="Heart Icon" className="heart-icon" />
           <p className="stat-number">120</p>
           <p className="stat-text">Volunteers Joined</p>
         </div>
