@@ -20,8 +20,8 @@ const FirstSection = () => {
       />
 
       <div className="content">
-        <h1 className="section-title">A Haven of Love for Cats and Dogs</h1>
-        <p className="section-description">
+        <h1 className="first-section-title">A Haven of Love for Cats and Dogs</h1>
+        <p className="first-section-description">
           The Rescuing Tails is a dedicated rescue center committed to providing
           a safe haven for dogs and cats in need. We offer love, care, and
           rehabilitation, helping every furry friend find their forever home.
@@ -80,6 +80,18 @@ const FirstSection = () => {
               Donate
             </motion.button>
           </div>
+        </div>
+
+        {/* Framer Motion for Contact Us Button */}
+        <div className="contact-button-wrapper">
+          <motion.button
+            className="contact-button"
+            whileHover={{ scale: 1.2 }} // Hover effect
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+          >
+            Contact Us
+          </motion.button>
         </div>
       </div>
 

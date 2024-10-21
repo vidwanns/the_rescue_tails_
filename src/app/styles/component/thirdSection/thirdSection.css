@@ -1,99 +1,163 @@
 .third-section {
-    background: linear-gradient(45deg, #edf9ec, #f9e9e8);
-    padding: 40px;
-  }
-  
-  .help-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .text-content {
-    max-width: 45%;
-  }
-  
-  .text-content h2 {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  .text-content p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .buttons button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .adopt-btn {
-    background-color: #655e94;
-    color: white;
-  }
-  
-  .foster-btn, .volunteer-btn, .donate-btn {
-    background-color: #f2f2f2;
-    color: black;
-  }
-  
-  .adoptables-link {
-    color: #F9B94E;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
-  .adoptables-link:hover {
-    text-decoration: underline;
-  }
-  
-  .donation-chart {
-    max-width: 45%;
-  }
-  
-  .donation-chart h3 {
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .donation-chart .transforms {
-    color: #F69C2C;
-  }
-  
-  .chart {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .chart-item {
-    text-align: center;
-  }
-  
-  .chart-icon {
-    font-size: 2rem;
-    display: block;
-  }
-  
-  .chart-line {
-    flex: 1;
-    height: 2px;
-    background-color: #333;
-    margin: 0 10px;
-  }
-  
+  background: #f7f4e3;
+  padding: 50px 20px;
+  position: relative; /* For absolute positioning of SVG icons */
+}
+
+/* Paw Icon Top Right */
+.paw-icon-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Bone Icon Left Center */
+.bone-icon-left-center {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+/* Paw Icon Below Bone */
+.paw-icon-below-bone {
+  position: absolute;
+  top: calc(50% + 70px); /* Positioned below the bone icon */
+  left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.dog-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #494949;
+  margin-bottom: 20px;
+  text-align: start;
+  width: 100%;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #696969;
+  margin: 40px 40px 40px 0;
+  padding-right: 400px;
+  width: 100%;
+  text-align: start;
+  letter-spacing: 0.5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.help-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.adopt {
+  background-color: #7a4f9a;
+  color: white;
+}
+
+.foster {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.volunteer {
+  background-color: #f0b01b;
+  color: white;
+}
+
+.donate {
+  background-color: #ffffff;
+  color: #494949;
+  border: 2px solid #494949;
+}
+
+.adoption-info {
+  font-size: 18px;
+  color: #696969;
+  margin: 40px 40px 40px 0;
+  padding-right: 400px;
+  width: 100%;
+  text-align: start;
+  letter-spacing: 0.5px;
+}
+
+.adoptables-link {
+  color: #f0b01b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Dog Icon Above Donation Graphic */
+.dog-icon-above-graphic {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+}
+
+.donation-graphic-container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.donation-title {
+  font-size: 24px;
+  color: #494949;
+}
+
+.highlight {
+  color: #f27623;
+  font-weight: bold;
+}
+
+.donation-graphic {
+  width: 100%;
+  scale: 1.6;
+  height: auto;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.graphic-info {
+  font-size: 16px;
+  color: #696969;
+  margin-bottom: 20px;
+}
