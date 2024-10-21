@@ -1,4 +1,7 @@
+'use client'; // Ensures this is a client-side component for Next.js
+
 import React from "react";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 import "../../styles/component/firstSection/firstSection.css";
 
 const FirstSection = () => {
@@ -58,15 +61,26 @@ const FirstSection = () => {
         </div>
 
         <div className="donate-section">
-  <div className="left-align">
-    <p className="donate-text">Send it with</p>
-    <img src="/images/firstSection/curved-arrow-2.svg" alt="Curved arrow" className="curved-arrow-icon-2" />
-  </div>
-  <div className="donate-button-wrapper"> {/* New wrapper div */}
-    <button className="donate-button">Donate</button>
-  </div>
-</div>
-
+          <div className="left-align">
+            <p className="donate-text">Send it with</p>
+            <img
+              src="/images/firstSection/curved-arrow-2.svg"
+              alt="Curved arrow"
+              className="curved-arrow-icon-2"
+            />
+          </div>
+          <div className="donate-button-wrapper">
+            {/* Framer Motion for Donate Button */}
+            <motion.button
+              className="donate-button"
+              whileHover={{ scale: 1.2 }} // Hover effect
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+            >
+              Donate
+            </motion.button>
+          </div>
+        </div>
       </div>
 
       {/* Right Icons */}

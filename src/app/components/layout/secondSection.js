@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 import '../../styles/component/secondSection/secondSection.css';
 
 const SecondSection = () => {
@@ -84,7 +87,15 @@ const SecondSection = () => {
           With compassion at our core, we aim to transform their lives and build a brighter future for them.
         </p>
 
-        <button className="cta-button">Let's Connect</button>
+        {/* CTA Button with Framer Motion */}
+        <motion.button
+          className="cta-button"
+          whileHover={{ scale: 1.1 }} // Animation on hover
+          onHoverStart={(e) => {}}
+          onHoverEnd={(e) => {}}
+        >
+          Let's Connect
+        </motion.button>
       </div>
     </section>
   );

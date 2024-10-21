@@ -1,3 +1,6 @@
+'use client'; // Ensure this is a client-side component
+
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 import Link from 'next/link';
 import '../../styles/component/layout/header.css';
 
@@ -27,11 +30,30 @@ const Header = () => {
       </nav>
 
       <div className="buttons-container">
-        <div className="button contact">contact us</div>
-        <div className="button donate">
+        {/* Framer Motion for Contact Us Button */}
+        <motion.div
+          className="button contact"
+          whileHover={{ scale: 1.2 }} // Hover effect
+          onHoverStart={(e) => {}}
+          onHoverEnd={(e) => {}}
+        >
+          contact us
+        </motion.div>
+
+        {/* Framer Motion for Donate Button */}
+        <motion.div
+          className="button donate"
+          whileHover={{ scale: 1.2 }} // Hover effect
+          onHoverStart={(e) => {}}
+          onHoverEnd={(e) => {}}
+        >
           Donate
-          <img src="/images/header/arrow-up-right.svg" alt="Arrow Icon" className="arrow-icon" />
-        </div>
+          <img
+            src="/images/header/arrow-up-right.svg"
+            alt="Arrow Icon"
+            className="arrow-icon"
+          />
+        </motion.div>
       </div>
     </header>
   );
