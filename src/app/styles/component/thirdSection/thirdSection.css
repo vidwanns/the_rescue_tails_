@@ -7,8 +7,8 @@
 /* Paw Icon Top Right */
 .paw-icon-top-right {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12%;
+  right: 14%;
   width: 50px;
   height: 50px;
 }
@@ -16,20 +16,21 @@
 /* Bone Icon Left Center */
 .bone-icon-left-center {
   position: absolute;
-  top: 50%;
-  left: 20px;
+  top: 45%;
+  left: 20%;
   width: 50px;
   height: 50px;
-  transform: translateY(-50%);
 }
 
 /* Paw Icon Below Bone */
 .paw-icon-below-bone {
   position: absolute;
-  top: calc(50% + 70px); /* Positioned below the bone icon */
-  left: 20px;
+  top: 60%; /* Positioned below the bone icon */
+  left: 2%;
   width: 50px;
   height: 50px;
+  transform: rotate(70deg);
+  scale: .8;
 }
 
 .content-container {
@@ -64,10 +65,10 @@
 }
 
 .section-description {
-  font-size: 18px;
+  font-size: 16px;
   color: #696969;
   margin: 40px 40px 40px 0;
-  padding-right: 400px;
+  padding-right: 460px;
   width: 100%;
   text-align: start;
   letter-spacing: 0.5px;
@@ -86,34 +87,42 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.adopt {
+.help-button:hover {
   background-color: #7a4f9a;
   color: white;
 }
 
+
+.adopt {
+  background-color: white;
+  color: black;
+}
+
 .foster {
-  background-color: #d3d3d3;
+  background-color: white;
   color: black;
 }
 
 .volunteer {
-  background-color: #f0b01b;
-  color: white;
+  background-color:white;
+  color: black;
 }
 
 .donate {
-  background-color: #ffffff;
-  color: #494949;
-  border: 2px solid #494949;
+  background-color: white;
+  color: black;
 }
 
 .adoption-info {
-  font-size: 18px;
+  font-size: 16px;
   color: #696969;
   margin: 40px 40px 40px 0;
-  padding-right: 400px;
+  padding-right: 460px;
   width: 100%;
   text-align: start;
   letter-spacing: 0.5px;
@@ -131,11 +140,25 @@
   margin: 0 auto;
   width: 100px;
   height: auto;
+  right: 50px;
 }
 
+/* Donation Graphic Container */
 .donation-graphic-container {
   margin-top: 100px;
   text-align: center;
+  position: relative; /* Allow positioning relative to the container */
+}
+
+/* Dog Icon Positioned at the Top-Right of the Donation Graphic */
+.dog-icon-above-graphic {
+  position: absolute;
+  top: -100%; /* Adjust this value to move it vertically */
+  right: 22%; /* Adjust this value to move it horizontally */
+  width: 100px;
+  height: auto;
+  z-index: 2; /* Ensure it appears above other elements */
+  scale: 2.5;
 }
 
 .donation-title {
@@ -161,3 +184,4 @@
   color: #696969;
   margin-bottom: 20px;
 }
+

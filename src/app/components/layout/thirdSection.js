@@ -5,9 +5,9 @@ const ThirdSection = () => {
   return (
     <section className="third-section">
       {/* SVG Icons */}
-      <img src="/images/ThirdSection/paw-icon.svg" alt="Paw Icon" className="paw-icon-top-right" />
-      <img src="/images/ThirdSection/bone-icon.svg" alt="Bone Icon" className="bone-icon-left-center" />
-      <img src="/images/ThirdSection/paw-icon.svg" alt="Paw Icon" className="paw-icon-below-bone" />
+      <img src="/images/ThirdSection/pawLeft.svg" alt="Paw Icon" className="paw-icon-top-right" />
+      <img src="/images/ThirdSection/bone.svg" alt="Bone Icon" className="bone-icon-left-center" />
+      <img src="/images/ThirdSection/pawRight.svg" alt="Paw Icon" className="paw-icon-below-bone" />
 
       <div className="content-container">
         <div className="image-container">
@@ -50,16 +50,22 @@ const ThirdSection = () => {
         </div>
       </div>
 
+
       <div className="donation-graphic-container">
-        {/* Dog SVG above the donation graphic */}
-        <img src="/images/ThirdSection/dog-icon.svg" alt="Dog Icon" className="dog-icon-above-graphic" />
-        {/* Donation Transformation Graphic */}
-        <img
-          src="/images/ThirdSection/donation transforms.png"
-          alt="Donation Transformation Graphic"
-          className="donation-graphic"
-        />
-      </div>
+          {/* Dog SVG Positioned at Top-Right of Donation Graphic */}
+          <img
+            src="/images/ThirdSection/tailup-dog.svg"
+            alt="tailup-dog"
+            className="dog-icon-above-graphic"
+          />
+
+          {/* Donation Transformation Graphic */}
+          <img
+            src="/images/ThirdSection/donation transforms.png"
+            alt="Donation Transformation Graphic"
+            className="donation-graphic"
+          />
+        </div>
     </section>
   );
 };

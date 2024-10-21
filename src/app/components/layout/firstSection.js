@@ -81,18 +81,6 @@ const FirstSection = () => {
             </motion.button>
           </div>
         </div>
-
-        {/* Framer Motion for Contact Us Button */}
-        <div className="contact-button-wrapper">
-          <motion.button
-            className="contact-button"
-            whileHover={{ scale: 1.2 }} // Hover effect
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}
-          >
-            Contact Us
-          </motion.button>
-        </div>
       </div>
 
       {/* Right Icons */}
