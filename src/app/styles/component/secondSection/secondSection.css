@@ -1,6 +1,6 @@
 .second-section {
     background-color: #d0ebea;
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
     text-align: center;
     position: relative;
 }
@@ -66,10 +66,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     margin-bottom: 20px;
     font-size: 3.5rem;  /* Set this back to the original large size */
     color: #2b534a;
+    width: 100%;
+
 }
 
 /* Make individual spans larger */
@@ -91,7 +93,7 @@
 }
 
 .description-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #2b534a;
     margin: 30px auto;
     max-width: 600px;
@@ -122,4 +124,38 @@
 
 .curved-decoration img {
     max-width: 100%;
+}
+
+
+.curved-decoration-2 {
+    position: absolute;
+    top: 71%;
+    left: 80%;
+    text-align: center;
+    scale: .7;
+}
+
+/* Heart SVG positioning */
+.svg-heart {
+    position: absolute;
+    top: 50%;
+    right: 23%;
+    scale: 1.5;
+}
+
+.svg-heart img {
+    width: 40px;
+    height: auto;
+}
+
+/* Paw SVG positioning */
+.svg-paw {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.svg-paw img {
+    width: 40px;
+    height: auto;
 }

@@ -29,6 +29,10 @@ const SecondSection = () => {
           <img src="/images/secondSection/curved-line.svg" alt="Curved Decoration" />
         </div>
 
+        <div className="curved-decoration-2">
+          <img src="/images/secondSection/curved-line.svg" alt="Curved Decoration-2" />
+        </div>
+
         {/* Main Title with Images and Text */}
         <div className="main-title">
           <div className="large-text">
@@ -51,6 +55,16 @@ const SecondSection = () => {
             </span>
             <span>FOR ANIMAL</span>
           </div>
+        </div>
+
+        {/* Heart SVG */}
+        <div className="svg-heart">
+          <img src="/images/secondSection/Icon akar-heart.svg" alt="Heart Icon" />
+        </div>
+
+        {/* Paw SVG */}
+        <div className="svg-paw">
+          <img src="/images/secondSection/paw.svg" alt="Paw Icon" />
         </div>
 
         <p className="description-text">
