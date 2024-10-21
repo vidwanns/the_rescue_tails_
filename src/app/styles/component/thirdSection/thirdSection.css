@@ -45,10 +45,12 @@
 }
 
 .dog-image {
-  width: 250px;
-  height: 200px;
+  position: absolute;
+  top: 0; /* Adjust this value to place it vertically */
+  left: 0; /* Adjust this value to place it horizontally */
+  width: 300px;
+  height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .text-container {
@@ -132,7 +134,13 @@
   color: #f0b01b;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
+.adoptables-link:hover {
+  color: #EE7331; /* Darker shade of the original color */
+}
+
 
 /* Dog Icon Above Donation Graphic */
 .dog-icon-above-graphic {
