@@ -4,7 +4,10 @@ import '../../styles/component/fourthSection/fourthSection.css';
 const FourthSection = () => {
   return (
     <div className="fourth-section">
-      <div className="vertical-text">Journey to Home</div> {/* New Vertical Text */}
+      <div className="vertical-text">Journey to Home</div> 
+      <img src="/images/fourthSection/org-bone.svg" alt="top-right-icon" className="top-right-icon" /> {/* Top Right Icon */}
+      <img src="/images/fourthSection/ball.svg" alt="bottom-right-icon" className="bottom-right-icon" /> {/* Bottom Right Icon */}
+      
       <div className="content-section">
         <img src="/images/fourthSection/blob.png" alt="green blob" className="green-blob" />
         <div className="animal-images">
@@ -16,8 +19,13 @@ const FourthSection = () => {
         <div className="text-content">
           <h1>Find Your Furry Friends</h1>
           <p>Begin your Adoption Journey Today</p>
+        </div>
+        <div className="button-container">
           <button className="meet-furry-button">
-            <span>Meet the Furry</span> <span className="arrow">→</span>
+            <span>Meet the Furry</span> 
+            <span className="arrow">
+              <img src="/images/fourthSection/arrow-right.svg" alt="arrow icon" />
+            </span>
           </button>
         </div>
       </div>
