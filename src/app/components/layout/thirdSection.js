@@ -20,8 +20,8 @@ const ThirdSection = () => {
         </div>
 
         <div className="text-container">
-          <h2 className="section-title">How to help?</h2>
-          <p className="section-description">
+          <h2 className="third-section-title">How to help?</h2>
+          <p className="third-section-description">
             If you have extra time on your hand and would like to help please
             consider volunteering! Rescue groups need dedicated volunteers to
             help with events, fundraisers, home checks, transport, etc. All of

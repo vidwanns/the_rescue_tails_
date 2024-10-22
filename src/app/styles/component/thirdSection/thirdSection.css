@@ -59,7 +59,7 @@
   padding: 0 20px;
 }
 
-.section-title {
+.third-section-title {
   font-size: 36px;
   color: #494949;
   margin-bottom: 20px;
@@ -67,11 +67,11 @@
   width: 100%;
 }
 
-.section-description {
+.third-section-description {
   font-size: 16px;
   color: #696969;
   margin: 40px 40px 40px 0;
-  padding-right: 460px;
+  padding-right: 90px;
   width: 100%;
   text-align: start;
   letter-spacing: 0.5px;
@@ -125,7 +125,7 @@
   font-size: 16px;
   color: #696969;
   margin: 40px 40px 40px 0;
-  padding-right: 460px;
+  padding-right: 90px;
   width: 100%;
   text-align: start;
   letter-spacing: 0.5px;
