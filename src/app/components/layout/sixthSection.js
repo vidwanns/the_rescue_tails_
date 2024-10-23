@@ -53,18 +53,24 @@ const SixthSection = () => {
                     <img src="/images/sixthSection/running-dogs.png" alt="Dogs Running" className="contact-image" />
                     <div className="info-details">
                         <div className="info-item">
-                            <img src="/images/sixthSection/phone-icon.svg" alt="Phone Icon" className="info-icon" />
+                            <hr className="info-line" />
+                            <div className="info-icon-text">
+                                <img src="/images/sixthSection/phone-icon.svg" alt="Phone Icon" className="info-icon" />
+                                <p className="info-label">Phone</p>
+                            </div>
                             <div className="info-text">
-                                <p>Phone</p>
                                 <p>957234601</p>
                                 <p>957234601</p>
                             </div>
                         </div>
 
                         <div className="info-item">
-                            <img src="/images/sixthSection/adress-icon.svg" alt="Address Icon" className="info-icon" />
+                            <hr className="info-line" />
+                            <div className="info-icon-text">
+                                <img src="/images/sixthSection/adress-icon.svg" alt="Address Icon" className="info-icon" />
+                                <p className="info-label">Address</p>
+                            </div>
                             <div className="info-text">
-                                <p>Address</p>
                                 <p>Awwars and manchester, Blu</p>
                                 <p>Pincode-901503</p>
                             </div>
