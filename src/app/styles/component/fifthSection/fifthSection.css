@@ -1,0 +1,70 @@
+.fifth-section {
+    padding-top: 6rem;
+    background-color: #f5f5f5; /* Light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the entire content */
+    height: 70vh;
+  }
+  
+  .top-row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Control the max width of the top row */
+    margin-bottom: 1rem;
+    gap: 2rem; 
+
+  }
+  
+  .bottom-row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    max-width: 900px; 
+    gap: 2rem; 
+  }
+  
+  .top-image,
+  .bottom-image {
+    width: 25%; 
+    border-radius: 15px;
+  }
+  
+  .instagram-card {
+    width: 745px;
+    height: 216px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional for shadow effect */
+    border: 1px solid #e5e5e5; /* Border around the Instagram card */
+  }
+  
+  .instagram-text {
+    font-size: 1.5rem;
+    color: #6e6e6e;
+  }
+  
+  .instagram-handle {
+    font-size: 1rem;
+    color: #9370db; /* Light purple for the handle */
+  }
+  
+  @media (max-width: 768px) {
+    .top-image,
+    .bottom-image,
+    .instagram-card {
+      width: 45%; /* Responsive adjustments */
+    }
+  
+    .top-row, 
+    .bottom-row {
+      flex-direction: column; /* Stack on smaller screens */
+      align-items: center;
+    }
+  }
+  
