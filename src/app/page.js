@@ -5,6 +5,7 @@ import SecondSection from "./components/layout/secondSection";
 import ThirdSection from "./components/layout/thirdSection";
 import FourthSection from "./components/layout/fourthSection";
 import FifthSection from "./components/layout/fifthSection";
+import SixthSection from "./components/layout/sixthSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <ThirdSection/>
     <FourthSection/>
     <FifthSection/>
+    <SixthSection/>
     </>
   );
 }

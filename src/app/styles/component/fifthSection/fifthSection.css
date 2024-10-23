@@ -8,6 +8,14 @@
     height: 100%;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width:100% !important;
+    margin: 0 auto;
+}
+
 .line-svg {
     position: absolute;
     bottom: 0;

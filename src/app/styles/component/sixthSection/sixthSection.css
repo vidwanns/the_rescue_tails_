@@ -1,0 +1,157 @@
+.sixth-section {
+    background-color: #183a36; /* Dark green background */
+    padding: 60px 20px;
+    position: relative;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0; /* No gap between elements */
+}
+
+.contact-form {
+    background-color: #F3ECE4; /* Light beige */
+    padding: 30px;
+    border-radius: 0 0 0 40px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+    height: 532px;
+}
+
+.contact-form h3 {
+    font-size: 28px;
+    color: #3a604b; /* Light green */
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field select,
+.input-field textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1.8px solid #444;
+    background-color: #fff;
+    color: #c0c0c0;
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #183a36;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.send-btn:hover {
+    background-color: #162f2c;
+}
+
+.send-icon {
+    margin: 0 5px 5px 0;
+    scale: .8;
+}
+
+.contact-info {
+    width: 50%;
+    position: relative;
+}
+
+.contact-image {
+    width: 100%;
+    height: 532px;
+    object-fit: cover; /* Ensures the image covers the entire space */
+}
+
+.info-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px; 
+    margin: auto;
+    width: 100%;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column; /* Stacks icon and text vertically */
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.info-item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff; /* White color for the line */
+    margin-bottom: 15px; /* Space between the line and the item */
+}
+
+.info-icon {
+    width: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    scale: .7;
+}
+
+.info-text p {
+    margin: 3px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
