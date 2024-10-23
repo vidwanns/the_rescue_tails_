@@ -4,37 +4,47 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the entire content */
-    height: 70vh;
+    height: 100%;
+  }
+  .fifth_content {
+    margin:auto;;
+    display: flex;
+    justify-content: center;
+    align-items:    center; 
+    flex-direction: column;
   }
   
   .top-row {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 900px; /* Control the max width of the top row */
-    margin-bottom: 1rem;
     gap: 2rem; 
+    margin:auto;
+    margin-bottom: 1rem;
+    width: 100%;
+
 
   }
   
   .bottom-row {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
+    margin:auto;
     width: 100%;
-    max-width: 900px; 
+
     gap: 2rem; 
   }
   
   .top-image,
   .bottom-image {
-    width: 25%; 
+    max-width: 250px; 
+    height: auto;
     border-radius: 15px;
   }
   
   .instagram-card {
-    width: 745px;
+    width: 100%;
     height: 216px;
     background-color: white;
     border-radius: 15px;
