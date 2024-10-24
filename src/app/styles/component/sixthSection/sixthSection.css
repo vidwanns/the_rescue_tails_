@@ -1,13 +1,13 @@
 .sixth-section {
-    background-color: #183a36; /* Dark green background */
-    padding: 60px 20px 20px 20px;
+    background-color: #102624; /* Dark green background */
+    padding: 60px 20px 0px 20px;
     position: relative;
-    height: 850px;
+    height: 800px;
 }
 
 /* New light green container */
 .outer-container {
-    background-color: #295b48; /* Light green background */
+    background-color: #214943; /* Light green background */
     padding-top: 150px;
     border-radius: 40px 40px 0 0; /* Slight rounded corners */
     margin: 0 auto;

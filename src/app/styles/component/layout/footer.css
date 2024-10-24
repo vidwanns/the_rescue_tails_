@@ -1,0 +1,120 @@
+.footer {
+    background-color: #102624; /* Dark green background */
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container-footer {
+    background-color: #214943; /* Light green background */
+    padding-top: 150px;
+    border-radius: 0px 0px 0 0; /* Slight rounded corners */
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 1300px;
+    top: 0;
+}
+
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-logo {
+    background-color: #e9d1b5; /* Light beige background */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 150px;
+}
+
+.logo-text {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.footer-tagline {
+    color: #c7f3e7;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right address {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    background-color: #f27a30; /* Orange background */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-btn .arrow {
+    margin-left: 10px;
+}
+
+.donate-btn:hover {
+    background-color: #e56a20;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .donate-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
