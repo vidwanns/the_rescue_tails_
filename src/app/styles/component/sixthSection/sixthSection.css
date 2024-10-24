@@ -1,9 +1,84 @@
 .sixth-section {
-    background-color: #183a36;
-    padding: 60px 20px;
+    background-color: #183a36; /* Dark green background */
+    padding: 60px 20px 20px 20px;
+    position: relative;
+    height: 850px;
+}
+
+/* New light green container */
+.outer-container {
+    background-color: #295b48; /* Light green background */
+    padding-top: 150px;
+    border-radius: 40px 40px 0 0; /* Slight rounded corners */
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 1300px;
+    top: 0;
+}
+
+/* Add decorative elements with absolute positioning */
+.decorative-elements {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.left-text {
+    color: #C7F3E7;
+}
+
+.left-text h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'HV';
+    font-weight: lighter;
+    margin-left: 30px;
+    color: #A9D886;
+}
+
+.left-text h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    color: #A9D886;
+    font-family: 'HV';
+    font-weight: lighter;
+}
+
+.right-svg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     position: relative;
 }
 
+/* Adjust dog SVG */
+.dog-svg {
+    width: 130px;
+    height: auto;
+    transform: translateX(-50px); 
+    top: -50px;
+    transform: translatey(-15px);
+    scale: .9;
+}
+
+/* Curve line SVG */
+.curve-line {
+    width: 150px;
+    height: auto;
+    margin-left: -10px;
+    scale: 1.9;
+    transform: translatey(-20px);
+    
+}
+
+/* Ensure the container and other elements are not affected by the decorative elements */
 .container1 {
     display: flex;
     justify-content: space-between;
@@ -11,6 +86,8 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-form {
@@ -115,7 +192,7 @@
 .info-item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -124,7 +201,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    justify-content: flex-start; /* Center icon and label together */
+    justify-content: flex-start;
 }
 
 .info-icon {
@@ -136,38 +213,25 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    text-align: start; /* Ensure text is centered */
 }
 
 .info-line {
     border: none;
     height: 2px;
     background-color: #fff;
-    width: 240px !important; 
+    width: 240px;
     margin-top: 10px;
 }
 
 .info-text {
-    text-align: start; /* Center align the text */
+    text-align: start;
 }
 
 .info-text p {
     font-size: 14px;
     color: #fff;
     margin: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
-
-.info-line {
-    border: none;
-    height: 2px; /* Thicker line */
-    background-color: #fff; /* White color */
-    width: 100px; /* Shorter width for more emphasis */
-    margin: 0 auto; /* Centered */
-    margin-top: 10px; /* Adjust margin to fit the layout */
-}
-
 
 @media screen and (max-width: 768px) {
     .container1 {
@@ -178,5 +242,12 @@
     .contact-info {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .decorative-elements {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 10px;
+        left: 10px;
     }
 }
