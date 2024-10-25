@@ -11,7 +11,12 @@ function Footer() {
             <img src="/images/footer/logo.svg" alt="The Rescue Tails Logo" />
           </div>
 
-          {/* Text Content Positioned to the Right */}
+          {/* Text in the Bottom Left */}
+          <div className="text-left-corner">
+            <h1>We Help Homeless Animals to Get a Decent Life!</h1>
+          </div>
+
+          {/* Text Content Positioned to the Top */}
           <div className="text-container">
             <div className="text-wrapper">
               {/* Footer Links (Left side of contact) */}
@@ -27,6 +32,8 @@ function Footer() {
                   <li>How to Help</li>
                 </ul>
               </div>
+
+              <div className="vertical-divider"></div>
 
               {/* Footer Contact at Top Right */}
               <div className="footer-contact">
@@ -50,5 +57,6 @@ function Footer() {
     </footer>
   );
 }
+
 
 export default Footer;
