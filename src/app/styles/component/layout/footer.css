@@ -1,9 +1,9 @@
 /* Main Footer Container */
 .footer {
-    background-color: #102624; /* Dark green background */
-    padding: 0px 20px 20px 20px; /* Adjusted padding to include more space at the top */
+    background-color: #102624;
+    padding: 0px 20px 20px 20px; 
     display: flex;
-    justify-content: center; /* Center everything in the footer */
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 600px;
@@ -12,84 +12,79 @@
 .outer-container-footer {
     background-color: #214943; 
     padding-top: 150px;
-    border-radius: 0px 0px 0 0; /* Rounded corners at the top */
+    border-radius: 0px 0px 0 0;
     margin: 0 auto;
     position: relative;
-    width: 1600px; /* Center the container within the available space */
+    width: 1600px;
     height: 600px;
-    top: 0;
     display: flex;
-    justify-content: center; /* Center the content wrapper */
+    justify-content: center;
     align-items: center;
-    padding: 40px; /* Increased padding for space around content */
 }
 
-/* New Content Wrapper */
+/* Content Wrapper */
 .inner-container-footer {
     background-color: #102624;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between logo and text */
     align-items: center;
     width: 1480px; 
     height: 400px;
+    position: relative;
 }
 
-/* Footer Logo Section */
-.footer-logo {
+/* Logo at the start of the container */
+.logo {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #F4E6CF; /* Beige color for the text */
-    font-size: 1.5rem;
-    max-width: 200px; /* Limited width to prevent overflow */
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 15px;
 }
 
-.logo-svg {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+/* Container for Footer Links and Contact */
+.text-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align text elements to the right */
+    align-items: flex-start; /* Align links and contact to the top */
+    width: 100%;
 }
 
 /* Footer Links Section */
 .footer-links {
     display: flex;
     gap: 50px;
-    justify-content: center;
-    flex: 1; /* Allow links to stretch in the middle */
+    margin-right: 100px; /* Add space between links and contact */
 }
 
 .links-column {
     list-style: none;
     font-size: 1rem;
-    color: #E7E7E7; /* Light grey for links */
-    text-align: left;
+    color: #E7E7E7;
 }
 
 .links-column li {
     margin-bottom: 10px;
 }
 
-/* Footer Contact Information */
+/* Footer Contact Information at the Top Right */
 .footer-contact {
     font-size: 0.9rem;
     line-height: 1.6;
-    max-width: 250px; /* Limit width of contact section */
-}
-
-.footer-contact p {
-    margin-bottom: 5px;
+    text-align: right; /* Right-align the contact info */
+    margin-left: 50px;
 }
 
 /* Footer Donate Button Section */
 .footer-donate {
+    margin-top: 20px; /* Keep some space between the contact info and the donate button */
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1; /* Align donate button to the right */
+    justify-content: flex-end; /* Align donate button to the right */
+    width: 100%;
 }
 
 .donate-btn {
-    background-color: #F4A261; /* Orange button color */
+    background-color: #F4A261;
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
