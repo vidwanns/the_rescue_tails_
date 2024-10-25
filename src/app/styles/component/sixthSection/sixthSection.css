@@ -8,7 +8,7 @@
 /* New light green container */
 .outer-container {
     background-color: #214943; /* Light green background */
-    padding-top: 150px;
+    padding-top: 180px;
     border-radius: 40px 40px 0 0; /* Slight rounded corners */
     margin: 0 auto;
     position: relative;
@@ -38,14 +38,14 @@
     margin-bottom: 5px;
     font-family: 'HV';
     font-weight: lighter;
-    margin-left: 30px;
+    margin-left: 75px;
     color: #A9D886;
 }
 
 .left-text h1 {
     font-size: 42px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 90px;
     color: #A9D886;
     font-family: 'HV';
     font-weight: lighter;
@@ -70,9 +70,10 @@
 
 /* Curve line SVG */
 .curve-line {
-    width: 150px;
+    width: 180px;
     height: auto;
-    margin-left: -10px;
+    margin-left: 16px;
+    margin-right: 12px;
     scale: 1.9;
     transform: translatey(-20px);
     
@@ -94,10 +95,10 @@
     background-color: #F3ECE4;
     padding: 30px;
     border-radius: 0 0 0 40px;
-    width: 700px;
+    width: 750px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: -110px;
-    height: 532px;
+    height: 570px;
 }
 
 .contact-form h3 {
@@ -133,7 +134,7 @@
 .input-field input,
 .input-field select,
 .input-field textarea {
-    padding: 10px;
+    padding: 16px;
     font-size: 14px;
     border-radius: 8px;
     border: 1.8px solid #444;
@@ -172,8 +173,8 @@
 }
 
 .contact-image {
-    width: 100%;
-    height: 532px;
+    width: 700PX;
+    height: 570px;
     object-fit: cover;
 }
 
