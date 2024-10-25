@@ -13,7 +13,7 @@
     margin: 0 auto;
     position: relative;
     height: 100%;
-    width: 1300px;
+    width: 1600px;
     top: 0;
 }
 
@@ -94,9 +94,9 @@
     background-color: #F3ECE4;
     padding: 30px;
     border-radius: 0 0 0 40px;
-    width: 50%;
+    width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 0;
+    margin-left: -110px;
     height: 532px;
 }
 
