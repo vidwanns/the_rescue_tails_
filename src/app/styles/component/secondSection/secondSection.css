@@ -1,5 +1,5 @@
 .second-section {
-    background-color: #d0ebea;
+    background-color: #D8F4F6;
     padding: 0 0 30px 0;
     text-align: center;
     position: relative;
@@ -101,13 +101,12 @@
     align-items: center;
     gap: 25px;
     margin-bottom: 20px;
-    font-size: 3.5rem;
     color: #2b534a;
     width: 100%;
 }
 
 .large-text span {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
 }
 
 .image-box {
@@ -127,7 +126,7 @@
     font-size: 1.1rem;
     color: #2b534a;
     margin: 30px auto;
-    max-width: 600px;
+    max-width: 680px;
 }
 
 .cta-button {
@@ -147,10 +146,10 @@
 
 .curved-decoration {
     position: absolute;
-    top: 23%;
-    left: -3%;
+    top: 26.4%;
+    left: -1%;
     text-align: center;
-    scale: .7;
+    scale: 1;
 }
 
 .curved-decoration img {
@@ -159,18 +158,18 @@
 
 .curved-decoration-2 {
     position: absolute;
-    top: 71.4%;
-    left: 83%;
+    top: 68%;
+    left: 81%;
     text-align: center;
-    scale: .7;
+    scale: 1;
     transform: rotate(180deg);
 }
 
 /* Heart SVG positioning */
 .svg-heart {
     position: absolute;
-    top: 50%;
-    right: 23%;
+    top: 51%;
+    right: 20%;
     scale: 1.5;
 }
 
@@ -196,8 +195,8 @@
 /* Paw SVG positioning for bottom-left */
 .svg-paw-bottom-left {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
+    bottom: 10%;
+    left: 7%;
 }
 
 .svg-paw-bottom-left img {
