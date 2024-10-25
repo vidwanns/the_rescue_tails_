@@ -13,7 +13,7 @@ const FifthSection = () => {
 
         <div className="fifth_content">
           <div className="top-row">
-            <img src="/images/fifthSection/girl-1.png" alt="Woman with pets" className="top-image" />
+            <img src="/images/fifthSection/nb-girl1.png" alt="Woman with pets" className="top-image" />
             <div className="instagram-card">
               {/* Instagram SVG Icon */}
               <svg
@@ -29,13 +29,13 @@ const FifthSection = () => {
               <p className="instagram-text">See more in our Instagram</p>
               <p className="instagram-handle">@headsfortails</p>
             </div>
-            <img src="/images/fifthSection/girl-6.png" alt="Woman with dog" className="top-image" />
+            <img src="/images/fifthSection/nb-girl6.png" alt="Woman with dog" className="top-image" />
           </div>
           <div className="bottom-row">
-            <img src="/images/fifthSection/girl-2.png" alt="Woman with coffee and dog" className="bottom-image" />
-            <img src="/images/fifthSection/girl-3.png" alt="Cat being pet" className="bottom-image" />
-            <img src="/images/fifthSection/girl-4.png" alt="Dog paw in hand" className="bottom-image" />
-            <img src="/images/fifthSection/girl-5.png" alt="Dog in jacket" className="bottom-image" />
+            <img src="/images/fifthSection/nb-girl2.png" alt="Woman with coffee and dog" className="bottom-image" />
+            <img src="/images/fifthSection/nb-girl3.png" alt="Cat being pet" className="bottom-image" />
+            <img src="/images/fifthSection/nb-girl4.png" alt="Dog paw in hand" className="bottom-image" />
+            <img src="/images/fifthSection/nb-girl5.png" alt="Dog in jacket" className="bottom-image" />
           </div>
         </div>
       </section>
