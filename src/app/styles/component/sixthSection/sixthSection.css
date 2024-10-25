@@ -234,7 +234,8 @@
 .info-text p {
     font-size: 14px;
     color: #fff;
-    margin: 0;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
