@@ -64,7 +64,7 @@
     font-size: 1.1rem;
     color: #333;
     margin: 0;
-    transform: rotate(20deg);
+    transform: rotate(10deg);
 }
 
 .donate-button-wrapper {
@@ -75,7 +75,7 @@
 }
 
 .donate-button {
-    padding: 10px 20px; /* Inner padding for the button */
+    padding: 15px 40px; /* Inner padding for the button */
     background-color: #ff7e42; /* Original background color */
     color: white;
     border: none; /* Remove the default border */

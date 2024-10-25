@@ -1,4 +1,4 @@
-'use client'; // Ensures this is a client-side component for Next.js
+"use client"; // Ensures this is a client-side component for Next.js
 
 import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
@@ -20,7 +20,9 @@ const FirstSection = () => {
       />
 
       <div className="content">
-        <h1 className="first-section-title">A Haven of Love for Cats and Dogs</h1>
+        <h1 className="first-section-title">
+          A Haven of Love for Cats and Dogs
+        </h1>
         <p className="first-section-description">
           The Rescuing Tails is a dedicated rescue center committed to providing
           a safe haven for dogs and cats in need. We offer love, care, and
@@ -28,36 +30,17 @@ const FirstSection = () => {
         </p>
 
         <div className="images-container">
-          <img
-            src="/images/firstSection/img_1.png"
-            alt="Rescued dog"
-            className="pet-image"
-          />
-          <img
-            src="/images/firstSection/img_2.png"
-            alt="Rescued cat"
-            className="pet-image"
-          />
-          <img
-            src="/images/firstSection/img_3.png"
-            alt="Rescued puppy"
-            className="pet-image"
-          />
-          <img
-            src="/images/firstSection/img_4.png"
-            alt="Adopt me dog"
-            className="pet-image"
-          />
-          <img
-            src="/images/firstSection/img_5.png"
-            alt="Rescued kitten"
-            className="pet-image"
-          />
-          <img
-            src="/images/firstSection/img_6.png"
-            alt="Rescued kitten"
-            className="pet-image"
-          />
+          {["img_1.png", "img_2.png", "img_3.png", "img_4.png", "img_5.png", "img_6.png"].map((img, index) => (
+            <motion.img
+              key={index}
+              src={`/images/firstSection/${img}`}
+              alt={`Rescued pet ${index + 1}`}
+              className="pet-image"
+              initial={{ opacity: 0, y: 20 }} // Start with opacity 0 and slightly below
+              animate={{ opacity: 1, y: 0 }} // Fade in and move to its original position
+              transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animation for each image
+            />
+          ))}
         </div>
 
         <div className="donate-section">
