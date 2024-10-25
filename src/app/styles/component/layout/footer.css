@@ -1,88 +1,101 @@
+/* Main Footer Container */
 .footer {
     background-color: #102624; /* Dark green background */
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px; /* Adjusted padding to include more space at the top */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center everything in the footer */
     align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
 }
 
 .outer-container-footer {
-    background-color: #214943; /* Light green background */
+    background-color: #214943; 
     padding-top: 150px;
-    border-radius: 0px 0px 0 0; /* Slight rounded corners */
+    border-radius: 0px 0px 0 0; /* Rounded corners at the top */
     margin: 0 auto;
     position: relative;
-    height: 100%;
-    width: 1600px;
+    width: 1600px; /* Center the container within the available space */
+    height: 600px;
     top: 0;
-}
-
-
-.footer-left {
-    flex: 1;
-}
-
-.footer-logo {
-    background-color: #e9d1b5; /* Light beige background */
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    max-width: 150px;
-}
-
-.logo-text {
-    font-size: 18px;
-    color: #000;
-    text-transform: uppercase;
-}
-
-.footer-tagline {
-    color: #c7f3e7;
-    font-size: 36px;
-    line-height: 1.2;
-    margin: 0;
-}
-
-.footer-center {
-    flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the content wrapper */
+    align-items: center;
+    padding: 40px; /* Increased padding for space around content */
 }
 
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* New Content Wrapper */
+.inner-container-footer {
+    background-color: #102624;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1480px; 
+    height: 400px;
 }
 
-.footer-nav ul li {
-    color: #fff;
-    font-size: 16px;
+/* Footer Logo Section */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #F4E6CF; /* Beige color for the text */
+    font-size: 1.5rem;
+    max-width: 200px; /* Limited width to prevent overflow */
+}
+
+.logo-svg {
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
-.footer-right {
-    flex: 1;
-    text-align: right;
+/* Footer Links Section */
+.footer-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex: 1; /* Allow links to stretch in the middle */
 }
 
-.footer-right address {
-    color: #fff;
-    font-size: 16px;
+.links-column {
+    list-style: none;
+    font-size: 1rem;
+    color: #E7E7E7; /* Light grey for links */
+    text-align: left;
+}
+
+.links-column li {
+    margin-bottom: 10px;
+}
+
+/* Footer Contact Information */
+.footer-contact {
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    max-width: 250px; /* Limit width of contact section */
+}
+
+.footer-contact p {
+    margin-bottom: 5px;
+}
+
+/* Footer Donate Button Section */
+.footer-donate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; /* Align donate button to the right */
 }
 
 .donate-btn {
-    background-color: #f27a30; /* Orange background */
-    color: white;
+    background-color: #F4A261; /* Orange button color */
     border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,31 +103,5 @@
 
 .donate-btn .arrow {
     margin-left: 10px;
-}
-
-.donate-btn:hover {
-    background-color: #e56a20;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-right {
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    .footer-nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .donate-btn {
-        width: 100%;
-        justify-content: center;
-    }
+    font-size: 1.4rem;
 }
