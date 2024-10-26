@@ -1,6 +1,6 @@
 .second-section {
     background-color: #D8F4F6;
-    padding: 0 0 30px 0;
+    /* padding: 0 0 30px 0; */
     text-align: center;
     position: relative;
 }
@@ -13,16 +13,16 @@
     background-color: #2b534a;
     padding: 20px;
     color: #fff;
-    height: 220px;
+    height: 350px;
     align-items: center;
 }
 
 .stat-box {
-    width: 190px;
-    height: 170px;
+    width: 260px;
+    height: 260px;
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
     transition: transform 0.3s ease;
     cursor: pointer;
     color: white; /* Default color for text */
@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
@@ -51,6 +51,8 @@
 }
 
 .heart-icon {
+    scale: 1.5;
+    margin-bottom: 14px;
     opacity: 0;
     transition: opacity 0.3s ease;
     transform: rotate(-10deg);
@@ -58,6 +60,7 @@
 
 .stat-box:hover .heart-icon {
     opacity: 1; /* Heart icon appears on hover */
+
 }
 
 .stat-number, .stat-text {
@@ -77,15 +80,16 @@
 }
 
 .stat-text {
-    font-size: 1rem;
+    font-size: 20px;
     padding-top: 10px;
-    width: 127px;
+    width: 160px;
     align-items: center;
     margin: auto;
 }
 
 .main-content {
     margin-top: 50px;
+    height: 700px;
 }
 
 .main-title {
@@ -106,12 +110,12 @@
 }
 
 .large-text span {
-    font-size: 5.5rem;
+    font-size: 120px;
 }
 
 .image-box {
-    width: 200px;
-    height: 90px;
+    width: 315px;
+    height: 124px;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -120,6 +124,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+
 }
 
 .description-text {
@@ -146,7 +152,7 @@
 
 .curved-decoration {
     position: absolute;
-    top: 26.4%;
+    top: 32%;
     left: -1%;
     text-align: center;
     scale: 1;
@@ -158,8 +164,8 @@
 
 .curved-decoration-2 {
     position: absolute;
-    top: 68%;
-    left: 81%;
+    top: 76%;
+    left: 80%;
     text-align: center;
     scale: 1;
     transform: rotate(180deg);
@@ -168,8 +174,8 @@
 /* Heart SVG positioning */
 .svg-heart {
     position: absolute;
-    top: 51%;
-    right: 20%;
+    top: 54%;
+    right: 10%;
     scale: 1.5;
 }
 
@@ -188,7 +194,7 @@
 }
 
 .svg-paw-top-left img {
-    width: 40px;
+    width: 70px;
     height: auto;
 }
 
@@ -207,12 +213,12 @@
 /* Paw SVG positioning for top-right */
 .svg-paw-top-right {
     position: absolute;
-    top: 19%;
+    top: 23%;
     right: 5%;
     scale: 1.5;
 }
 
 .svg-paw-top-right img {
-    width: 40px;
+    width: 70px;
     height: auto;
 }
