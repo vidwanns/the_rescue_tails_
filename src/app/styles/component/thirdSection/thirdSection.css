@@ -1,82 +1,10 @@
 .third-section {
-  background: linear-gradient(135deg,#CFEFA7 0%, #EEE2C3 50%, #F8DECC 100%);
+  background: linear-gradient(135deg, #2A6259 0%, #367A62 50%, #61D287 100%);
   padding: 50px 20px;
-  position: relative; /* For absolute positioning of SVG icons */
+  position: relative;
 }
 
-
-/* Paw Icon Top Right */
-.paw-icon-top-right {
-  position: absolute;
-  top: 12%;
-  right: 14%;
-  width: 50px;
-  height: 50px;
-}
-
-/* Bone Icon Left Center */
-.bone-icon-left-center {
-  position: absolute;
-  top: 45%;
-  left: 20%;
-  width: 50px;
-  height: 50px;
-}
-
-/* Paw Icon Below Bone */
-.paw-icon-below-bone {
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  width: 50px;
-  height: 50px;
-  transform: rotate(70deg);
-  scale: .8;
-}
-
-.content-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.image-container {
-  flex: 1;
-}
-
-.dog-image {
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-}
-
-.text-container {
-  flex: 2;
-  padding: 0 20px;
-}
-
-.third-section-title {
-  font-size: 36px;
-  color: #494949;
-  margin-bottom: 20px;
-  text-align: start;
-  width: 100%;
-}
-
-.third-section-description {
-  font-size: 16px;
-  color: #696969;
-  margin: 40px 40px 40px 0;
-  padding-right: 500px;
-  width: 100%;
-  text-align: start;
-  letter-spacing: 0.5px;
-}
-
+/* Button Group */
 .button-group {
   display: flex;
   gap: 15px;
@@ -84,6 +12,9 @@
 }
 
 .help-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 20px;
   border-radius: 30px;
   border: none;
@@ -100,32 +31,91 @@
   color: white;
 }
 
-
-.adopt {
-  background-color: white;
-  color: black;
+.button-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.foster {
-  background-color: white;
-  color: black;
+.help-button:hover .button-icon {
+  opacity: 1;
 }
 
-.volunteer {
-  background-color:white;
-  color: black;
+/* SVG Icon Styling */
+.paw-icon-top-right,
+.bone-icon-left-center,
+.paw-icon-below-bone {
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }
 
-.donate {
-  background-color: white;
-  color: black;
+.paw-icon-top-right {
+  top: 12%;
+  right: 14%;
+}
+
+.bone-icon-left-center {
+  top: 45%;
+  left: 20%;
+}
+
+.paw-icon-below-bone {
+  top: 60%;
+  left: 2%;
+  transform: rotate(70deg);
+  scale: 0.8;
+}
+
+/* Text and Layout */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.dog-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.third-section-title {
+  font-size: 66px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.third-section-description {
+  font-size: 24px;
+  color: #fff;
+  margin: 40px 40px 40px 0;
+  padding-right: 460px;
+  width: 100%;
+  text-align: start;
+  letter-spacing: 0.5px;
 }
 
 .adoption-info {
-  font-size: 16px;
-  color: #696969;
+  font-size: 24px;
+  color: #fff;
   margin: 40px 40px 40px 0;
-  padding-right: 500px;
+  padding-right: 460px;
   width: 100%;
   text-align: start;
   letter-spacing: 0.5px;
@@ -135,24 +125,13 @@
   color: #f0b01b;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease;
 }
 
 .adoptables-link:hover {
-  color: #EE7331; /* Darker shade of the original color */
+  color: #EE7331;
 }
 
-
-/* Dog Icon Above Donation Graphic */
-.dog-icon-above-graphic {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: auto;
-  right: 50px;
-}
-
-/* Donation Graphic Container */
 .donation-graphic-container {
   margin-top: 100px;
   text-align: center;
@@ -162,8 +141,8 @@
 /* Dog Icon Positioned at the Top-Right of the Donation Graphic */
 .dog-icon-above-graphic {
   position: absolute;
-  top: -100%; /* Adjust this value to move it vertically */
-  right: 22%; /* Adjust this value to move it horizontally */
+  top: -53%; /* Adjust this value to move it vertically */
+  right: 18%; /* Adjust this value to move it horizontally */
   width: 100px;
   height: auto;
   z-index: 2; /* Ensure it appears above other elements */
@@ -180,17 +159,80 @@
   font-weight: bold;
 }
 
-.donation-graphic {
-  width: 100%;
-  scale: 1.6;
-  height: auto;
-  max-width: 600px;
-  margin: 20px 0;
+/* New Container Styling */
+.new-container {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 1300px;
+  height: 350px;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
 }
 
-.graphic-info {
-  font-size: 16px;
-  color: #696969;
-  margin-bottom: 20px;
+.donation-title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
+.highlight {
+  color: #f27623;
+  font-weight: bold;
+}
+
+/* Journey Graphic Styling */
+.donation-journey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.journey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Icon-specific Styles */
+.donation-amount::before {
+  content: "💵"; /* Replace with SVG or image if available */
+  font-size: 24px;
+}
+
+.donation-bags::before {
+  content: "🛍️";
+  font-size: 24px;
+}
+
+.donation-foods::before {
+  content: "🍲";
+  font-size: 24px;
+}
+
+.donation-happy-furry::before {
+  content: "🐶";
+  font-size: 24px;
+}
+
+/* Connecting Lines */
+.journey-line {
+  width: 100px;
+  height: 2px;
+  background-color: #61D287;
+  border-top: 2px dashed #61D287;
+}

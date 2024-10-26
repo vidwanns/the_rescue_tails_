@@ -5,13 +5,12 @@ const ThirdSection = () => {
   return (
     <section className="third-section">
       {/* SVG Icons */}
-      <img src="/images/ThirdSection/pawLeft.svg" alt="Paw Icon" className="paw-icon-top-right" />
-      <img src="/images/ThirdSection/bone.svg" alt="Bone Icon" className="bone-icon-left-center" />
-      <img src="/images/ThirdSection/pawRight.svg" alt="Paw Icon" className="paw-icon-below-bone" />
+      <img src="/images/ThirdSection/whitePawRight.svg" alt="Paw Icon" className="paw-icon-top-right" />
+      <img src="/images/ThirdSection/white-bone.svg" alt="Bone Icon" className="bone-icon-left-center" />
+      <img src="/images/ThirdSection/pawLeftOrg.svg" alt="Paw Icon" className="paw-icon-below-bone" />
 
       <div className="content-container">
         <div className="image-container">
-          {/* Dog Image on the top left */}
           <img
             src="/images/ThirdSection/dog-laying.png"
             alt="Rescue Dog"
@@ -30,10 +29,22 @@ const ThirdSection = () => {
           </p>
 
           <div className="button-group">
-            <button className="help-button adopt">Adopt</button>
-            <button className="help-button foster">Foster</button>
-            <button className="help-button volunteer">Volunteer</button>
-            <button className="help-button donate">Donate</button>
+            <button className="help-button adopt">
+              <img src="/images/ThirdSection/fox1.svg" alt="Dog Icon" className="button-icon" />
+              Adopt
+            </button>
+            <button className="help-button foster">
+              <img src="/images/ThirdSection/home2.svg" alt="House Icon" className="button-icon" />
+              Foster
+            </button>
+            <button className="help-button volunteer">
+              <img src="/images/ThirdSection/food-3.svg" alt="Volunteer Icon" className="button-icon" />
+              Volunteer
+            </button>
+            <button className="help-button donate">
+              <img src="/images/ThirdSection/hand4.svg" alt="Donate Icon" className="button-icon" />
+              Donate
+            </button>
           </div>
 
           <p className="adoption-info">
@@ -50,22 +61,41 @@ const ThirdSection = () => {
         </div>
       </div>
 
-
+      {/* New Container to Replace Donation Graphic */}
       <div className="donation-graphic-container">
-          {/* Dog SVG Positioned at Top-Right of Donation Graphic */}
-          <img
-            src="/images/ThirdSection/tailup-dog.svg"
-            alt="tailup-dog"
-            className="dog-icon-above-graphic"
-          />
+        <img
+          src="/images/ThirdSection/tailup-dog.svg"
+          alt="tailup-dog"
+          className="dog-icon-above-graphic"
+        />
+<div className="new-container">
+  <h3 className="donation-title">
+    See How Your Donation <span className="highlight">Transforms</span> Lives!
+  </h3>
+  <div className="donation-journey">
+    <div className="journey-step">
+      <div className="icon donation-amount"></div>
+      <p>Donated Amount</p>
+    </div>
+    <div className="journey-line"></div>
+    <div className="journey-step">
+      <div className="icon donation-bags"></div>
+      <p>No. of bags</p>
+    </div>
+    <div className="journey-line"></div>
+    <div className="journey-step">
+      <div className="icon donation-foods"></div>
+      <p>Foods</p>
+    </div>
+    <div className="journey-line"></div>
+    <div className="journey-step">
+      <div className="icon donation-happy-furry"></div>
+      <p>Happy Furry</p>
+    </div>
+  </div>
+</div>
 
-          {/* Donation Transformation Graphic */}
-          <img
-            src="/images/ThirdSection/donation transforms.png"
-            alt="Donation Transformation Graphic"
-            className="donation-graphic"
-          />
-        </div>
+      </div>
     </section>
   );
 };
